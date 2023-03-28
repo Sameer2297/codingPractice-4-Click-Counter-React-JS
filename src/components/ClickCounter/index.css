@@ -27,11 +27,13 @@ span {
 .btn {
   background-color: #007bff;
   color: #ffffff;
-  padding-top: 15px;
-  padding-bottom: 15px;
   padding-top: 8px;
   padding-bottom: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
   cursor: pointer;
+  border:none;
+  border-radius:3px;
 }
 
 @media (min-width: 768px) {

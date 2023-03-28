@@ -3,9 +3,11 @@ import './index.css'
 
 class ClickCounter extends Component {
   state = {count: 0}
-  countClick = () => {
+
+  Click = () => {
     this.setState(prevState => ({count: prevState.count + 1}))
   }
+
   render() {
     const {count} = this.state
     return (
@@ -14,7 +16,7 @@ class ClickCounter extends Component {
           The button has been clicked <span>{count}</span> times
         </h1>
         <p className="para">Click the button to increase the count!</p>
-        <button className="btn" onClick={this.countClick}>
+        <button type="button" className="btn" onClick={this.Click}>
           Click Me!
         </button>
       </div>
